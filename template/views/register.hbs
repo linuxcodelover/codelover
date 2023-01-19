@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <h1>Welcome to registration Page</h1>
+    <form action="/register" method="post">
+      <input
+        type="text"
+        name="firstname"
+        placeholder="first name"
+        value=""
+      /><br /><br />
+      <input type="text" name="lastname" placeholder="last name" value="" /><br
+      /><br />
+      <input type="email" name="email" placeholder="your Mail" value="" /><br
+      /><br />
+      <input type="text" name="age" placeholder="Enter your Age" value="" /><br
+      /><br />
+
+      <input
+        type="text"
+        name="phone"
+        minlength="10"
+        maxlength="10"
+        placeholder="your phone number"
+        value=""
+      />
+      <br />
+      <br />
+      <input
+        type="password"
+        name="password"
+        placeholder="your password"
+        value=""
+      />
+      <input
+        type="password"
+        name="confirmpassword"
+        placeholder="re Enter password"
+        value=""
+      /><br /><br />
+      Gender:<label for="male">
+        <input type="radio" name="gender" id="male" value="male" />
+      </label>
+      <span>Male</span>
+      <label for="female">
+        <input type="radio" name="gender" id="female" value="female" />
+      </label>
+      <span>Female</span>
+      <br /><br />
+      <input type="submit" value="Register" />
+
+    </form>
+    <a href="/login"><button>Log in</button></a>
+    <a href="/"><button>home</button></a>
+  </body>
+</html>
